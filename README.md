@@ -1,6 +1,6 @@
-# tmdb-mcp-server
+# ai-movie-assistant-mcp
 
-An MCP (Model Context Protocol) server that gives Claude and other MCP clients tools for The Movie Database (TMDB): search movies and TV shows, see what is trending, and read reviews and recommendations through natural language. I built it at a workshop with [PwC](https://www.pwc.no/).
+An AI movie assistant: an MCP (Model Context Protocol) server that gives Claude and other MCP clients tools for The Movie Database (TMDB): search movies and TV shows, see what is trending, and read reviews and recommendations through natural language. I built it at a workshop with [PwC](https://www.pwc.no/).
 
 ## Tools
 | Tool | What it does |
@@ -37,7 +37,7 @@ Add this to `claude_desktop_config.json`, with the absolute path to this repo:
   "mcpServers": {
     "tmdb-server": {
       "command": "uv",
-      "args": ["--directory", "/ABSOLUTE/PATH/TO/tmdb-mcp-server", "run", "main.py"]
+      "args": ["--directory", "/ABSOLUTE/PATH/TO/ai-movie-assistant-mcp", "run", "main.py"]
     }
   }
 }
